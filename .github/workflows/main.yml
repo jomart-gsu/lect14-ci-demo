@@ -35,8 +35,8 @@ jobs:
           architecture: x64
           
       # (This is a good idea if you have a requirements.txt)
-      # - name: Install dependencies
-      #  run: pip install -r requirements.txt 
+      - name: Install dependencies
+        run: pip install requests python-dotenv 
         
       - name: Install linter
         run: pip install pylint
